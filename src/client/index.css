@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import 'theme.css';
+
 * {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
@@ -8,6 +9,7 @@
 #root {
   padding-left: 30%;
   padding-right: 30%;
+  padding-top: 8%;
   height: 100vh;
 }
 
@@ -49,4 +51,62 @@ button {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.mealName #card {
+  background-color: lightblue;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  margin-right: 30px;
+}
+
+.mealName {
+  font-size: 16px;
+}
+
+.mealName p {
+  text-align: justify;
+}
+
+.mealName img {
+  width: 100%;
+  height: auto;
+}
+
+.meal-list img {
+  width: 300px;
+  height: 250px;
+  padding-bottom: 20px;
+  margin-right: 200px;
+}
+
+.add-meal input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .add-meal textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .add-meal button {
+    padding: 15px;
+  }
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: #0d6efd;
+  padding-top: 15px;
+  margin-top: 60px;
+  color: #0fffff;
+  text-align: center;
+  position: absolute;
+  margin-left: -432px;
 }

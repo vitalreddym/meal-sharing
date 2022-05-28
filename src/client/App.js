@@ -1,20 +1,51 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import TestComponent from "./components/TestComponent/TestComponent";
+import { BrowserRouter as Router, Route, Redirect} from "react-router-dom";
+//import TestComponent from ".components/TestComponent/TestComponent";
+import { AddMeal } from "./components/AddMeal";
+import Home  from './components/Home';
+import Navbar  from "./components/Navbar";
+import MealDisplay from "./components/MealDisplay";
+import GiveReview from "./components/GiveReview";
+import { Reservation }  from "./components/Reservation";
+import { Review } from "./components/Review";
+import  ViewReservation   from "./components/ViewReservation";
+import { ContactUs } from "./components/ContactUs";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <Router>
-      <Route exact path="/">
-        <p>test</p>
-      </Route>
-      <Route exact path="/lol">
-        <p>lol</p>
-      </Route>
-      <Route exact path="/test-component">
-        <TestComponent></TestComponent>
-      </Route>
-    </Router>
+    <div>
+      <Router>
+        <Navbar></Navbar>
+        <Route exact path="/">
+          <Home></Home>
+        </Route>
+        <Route exact path="/home">
+          <Home></Home>
+        </Route>
+        <Route exact path="/meal-display">
+          <MealDisplay></MealDisplay>
+        </Route>
+        <Route exact path="/add-meal">
+          <AddMeal></AddMeal>
+        </Route>
+        <Route exact path="/reservation">
+          <ViewReservation></ViewReservation>
+        </Route>
+        <Route exact path="/give-reviews">
+          <GiveReview></GiveReview>
+        </Route>
+        <Route exact path="/meal-display/:id">
+          <Reservation></Reservation>
+        </Route>
+        <Route exact path="/give-reviews/:id">
+          <Review></Review>
+        </Route>
+        <Route exact path="/contactus">
+          <ContactUs></ContactUs>
+        </Route>
+      </Router>
+    </div>
   );
 }
 
