@@ -6,11 +6,12 @@
     "node": "8.11.1"
   },
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "npm run build && node ./src/backend/server",
-    "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
-    "server": "nodemon ./src/backend/server",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "author": "Benjamin Hughes",
   "license": "MIT",
@@ -45,6 +46,7 @@
     "react-router-dom": "^5.0.1",
     "sass": "^1.27.1",
     "sass-loader": "^10.0.4",
+    "serve": "^13.0.2",
     "serve-favicon": "2.4.5",
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1",
