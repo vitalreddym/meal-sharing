@@ -1,32 +1,4 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@vitalreddym 
-younesmln
-/
-hyf-meal-sharing-app
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-hyf-meal-sharing-app/package.json
-@orhantoy
-orhantoy Install url-loader
-…
-Latest commit 436d554 on 13 Jan 2021
- History
- 2 contributors
-@orhantoy@benna100
-60 lines (60 sloc)  1.72 KB
+
    
 {
   "name": "meal-sharing",
@@ -88,15 +60,3 @@ Latest commit 436d554 on 13 Jan 2021
     "case-sensitive-paths-webpack-plugin": "^2.3.0"
   }
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
