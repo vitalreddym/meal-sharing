@@ -52,6 +52,7 @@
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
+    "@webpack-cli/serve": "^1.6.1",
     "case-sensitive-paths-webpack-plugin": "^2.3.0",
     "concurrently": "^5.3.0",
     "nodemon": "^1.12.1",
