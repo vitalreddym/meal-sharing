@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Redirect} from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 //import TestComponent from ".components/TestComponent/TestComponent";
 import { AddMeal } from "./components/AddMeal";
 import Home  from './components/Home';
@@ -17,9 +17,9 @@ function App() {
     <div>
       <Router>
         <Navbar></Navbar>
-        <Route exact path="/">
+       {/* <Route exact path="/">
           <Home></Home>
-        </Route>
+  </Route> */}
         <Route exact path="/home">
           <Home></Home>
         </Route>
