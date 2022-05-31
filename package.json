@@ -8,7 +8,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "npm run build && node ./src/backend/server",
-    "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
+    "client": "webpack-dev-server --mode production --devtool inline-source-map --hot --env development",
     "server": "nodemon ./src/backend/server",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
@@ -29,6 +29,7 @@
     "body-parser": "^1.18.3",
     "bootstrap": "^4.6.0",
     "chokidar": "^3.5.3",
+    "cjs-loader": "^0.1.0",
     "cookie-parser": "~1.4.3",
     "copy-webpack-plugin": "^5.1.1",
     "cors": "^2.8.4",
@@ -51,7 +52,8 @@
     "sass-loader": "^10.0.4",
     "serve-favicon": "2.4.5",
     "url-loader": "^4.1.1",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "webpack": "^5.72.1"
   },
   "devDependencies": {
     "@webpack-cli/serve": "^1.6.1",
@@ -62,9 +64,8 @@
     "nodemon": "^1.12.1",
     "sequelize-cli": "^5.4.0",
     "style-loader": "^2.0.0",
-    "webpack": "^5.72.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.3"
+    "webpack-dev-server": "^4.9.1"
   },
   "optionalDependencies": {
     "fsevents": "^2.3.2"
