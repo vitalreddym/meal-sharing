@@ -45,7 +45,7 @@ export function Review() {
         <div className="card-body">
           <form>
             <div className="col-7 col-md-3">
-              <label>Title</label>
+              <label>&nbsp; &nbsp;Title</label>
               <input
                 type="text"
                 value={title}
@@ -67,7 +67,7 @@ export function Review() {
                 value={star}
                 onChange={(e) => setStar(e.target.value)}
               ></input>
-            </div>
+            </div> <br />
 
             <div className="form-group row">
               <div className="offset-md-2 col-md-5">
