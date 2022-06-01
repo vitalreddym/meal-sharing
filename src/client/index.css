@@ -56,6 +56,14 @@ button {
 .mealName #card {
   background-color: lightblue;
 }
+#card .badge-warning {
+  background-color: #17a2b8;
+}
+
+.btn.btn-primary {
+  color: #fff;
+  background-color: #17a2b8;
+}
 
 .navbar-dark .navbar-nav .nav-link {
   margin-right: 30px;
@@ -108,5 +116,5 @@ button {
   color: #0fffff;
   text-align: center;
   position: absolute;
-  margin-left: -432px;
+  margin-left: -30%;
 }
