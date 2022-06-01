@@ -10,7 +10,7 @@ export default function MealDisplay() {
       console.log(result);
       setMeal(result);
     })();
-  }, []);
+  }, [meal]);
 
   return (
     <>
