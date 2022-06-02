@@ -11,7 +11,7 @@ export function Reservation() {
   console.log(filterMeal);
 
   useEffect(() => {
-    fetch("/api/meals/ ${id}")
+    fetch("/api/meals/ + id")
       .then(res => res.json())
       .then(result => {
         console.log(result)
@@ -35,12 +35,13 @@ export function Reservation() {
         }),
       });
       return (response);
-    }
+    } 
     if (guest!== "") {
       alert("Reservation successful");
     } else {
     alert("Reservation not successful");
     }
+
     const reserv = fetchReservation();
     console.log(reserv);
   }

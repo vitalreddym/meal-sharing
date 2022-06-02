@@ -34,18 +34,18 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./add-meal">
+                <a className="nav-link" href="add-meal">
                   <span className="fa fa-address-card fa-lg"></span>AddMeal
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./reservation">
+                <a className="nav-link" href="reservation">
                   <span className="fa fa-address-card fa-lg"></span>
                   TotalReservations
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./give-reviews">
+                <a className="nav-link" href="give-reviews">
                   <span className="fa fa-address-card fa-lg"></span>GiveReview
                 </a>
               </li>
