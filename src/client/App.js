@@ -24,14 +24,14 @@ function App() {
         <Route exact path="/home">
           <Home></Home>
         </Route>
+        <Route exact path="/meal-display">
+          <MealDisplay></MealDisplay>
+        </Route>
         <Route exact path="/add-meal">
           <AddMeal></AddMeal>
         </Route>
         <Route exact path="/reservation">
           <ViewReservation></ViewReservation>
-        </Route>
-        <Route exact path="/meal-display">
-          <MealDisplay></MealDisplay>
         </Route>
         <Route exact path="/give-reviews">
           <GiveReview></GiveReview>
