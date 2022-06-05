@@ -11,12 +11,12 @@ module.exports = {
     path: path.join(__dirname, outputDirectory),
     filename: 'bundle.js',
   },
-  
+  /*
   performance: {
     maxEntrypointSize: 512000,
     maxAssetSize: 512000,
     hints: false
-  },
+  }, */
 
   module: {
     rules: [
