@@ -11,8 +11,7 @@
     "start": "node ./src/backend/server",
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
     "server": "nodemon ./src/backend/server",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "echo Skip build on Heroku"
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Benjamin Hughes",
   "license": "MIT",
