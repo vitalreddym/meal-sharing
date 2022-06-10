@@ -18,7 +18,7 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <a className="navbar-brand" href="#">
-            <img src={logo} alt=" MealSharingApp" width="10%" style={{ borderRadius: "30px" }} />&nbsp;
+            <img src={logo} alt=" MealSharingApp" style={{ width: "60px", borderRadius: "30px" }} />&nbsp;
             <em>MealSharingApp</em></a>  
           <AutoComplete data={autoCompleteData} />
           <div className="collapse navbar-collapse" id="Navbar">

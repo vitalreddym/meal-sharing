@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink} from "react-router-dom";
+import { Link } from "react-router-dom";
 import foodmenu from "./../assets/images/foodmenu.png";
 
 export default function MealDisplay() {
@@ -15,14 +15,14 @@ export default function MealDisplay() {
   return (
     <>
       <div className="mealName">
-        <p className="text"> For Reservation: Click on Meal </p>
+        <p className="text"> For Reservation: Click on Meal: </p><br />
         {meal?.map((item) => (
-            <NavLink key={item.index} to={"/meal-display/" + item.index}>
+            <Link key={item.id} to={`/meal-display/${item.id}`}>
               <div className="meal-list">
-                {item.title} ********** {item.price}  dkk
+               {item.title} -------- {item.price} 99 kr.
                 <img src={foodmenu} alt="foodmenu" />
               </div>
-            </NavLink>
+            </Link>
         ))}
       </div>
     </>

@@ -1,3 +1,4 @@
+
 export const autoCompleteData = [
     "Soup",
     "Pizza",
@@ -18,5 +19,3 @@ export const autoCompleteData = [
       });
       return await res.json();
      } */
-
-     

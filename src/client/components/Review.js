@@ -45,7 +45,7 @@ export function Review() {
         <div className="card-body">
           <form>
             <div className="col-7 col-md-3">
-              <label>&nbsp; &nbsp;Title</label>
+              <label>&nbsp;&nbsp;Title</label>
               <input
                 type="text"
                 value={title}

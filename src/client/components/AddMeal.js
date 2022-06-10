@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 export function AddMeal() {
-
   const [mealName, setMealName] = useState("");
   const [desc, setDesc] = useState("");
   const [location, setLocation] = useState("");

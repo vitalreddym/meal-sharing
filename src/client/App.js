@@ -11,11 +11,12 @@ import { Review } from "./components/Review";
 import ViewReservation from "./components/ViewReservation";
 import { ContactUs } from "./components/ContactUs";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer  from "./components/Footer";
 
 function App() {
   return (
     <div>
-      <style>{"body { background-image: url(https://i.ibb.co/pQ59KnL/ban4.jpg); }"}</style>
+      <style>{"body { background-image: url(https://i.ibb.co/Sw874XR/banner3.jpg); }"}</style>
       <Router>
         <Navbar></Navbar>
         <Route exact path="/">
@@ -46,6 +47,7 @@ function App() {
           <ContactUs></ContactUs>
         </Route>
       </Router>
+      <Footer />
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-const AutoComplete = ({ data }) => {
-    
+const AutoComplete = ({ data }) => { 
   const [suggestions, setSuggestions] = useState([]);
   const [suggestionIndex, setSuggestionIndex] = useState(0);
   const [suggestionsActive, setSuggestionsActive] = useState(false);
@@ -10,11 +9,13 @@ const AutoComplete = ({ data }) => {
   const handleChange = (e) => {
     const query = e.target.value.toLowerCase();
     setValue(query);
+    
     if (query.length > 1) {
       const filterSuggestions = data.filter(
         (suggestion) =>
           suggestion.toLowerCase().indexOf(query) > -1
       );
+      
       setSuggestions(filterSuggestions);
       setSuggestionsActive(true);
     } else {
@@ -73,6 +74,7 @@ const AutoComplete = ({ data }) => {
     <div className="autocomplete">
       <input
         type="text"
+        placeholder="search your meal"
         value={value}
         onChange={handleChange}
         onKeyDown={handleKeyDown}
@@ -80,7 +82,6 @@ const AutoComplete = ({ data }) => {
       {suggestionsActive && <Suggestions />}
     </div>
   );
-  
 };
 
 export default AutoComplete;

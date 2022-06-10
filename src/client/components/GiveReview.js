@@ -12,7 +12,7 @@ export default function GiveReview() {
 
   return (
     <>
-      <p className="mealName text"> Click on Meal and write your review</p>
+      <p className="mealName text"> Click on Meal and write your review:</p>
       <div>
         {review?.map((item) => (
           <li key={item.id}>
