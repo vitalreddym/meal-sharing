@@ -3,7 +3,6 @@ const path = require('path');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 const outputDirectory = 'dist';
 
 module.exports = {
@@ -12,6 +11,13 @@ module.exports = {
     path: path.join(__dirname, outputDirectory),
     filename: 'bundle.js',
   },
+  /*
+  performance: {
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
+    hints: false
+  }, */
+
   module: {
     rules: [
       {
@@ -56,6 +62,7 @@ module.exports = {
       template: './public/index.html',
       favicon: './public/favicon.ico',
     }),
+
     new CaseSensitivePathsPlugin(),
     new Dotenv({
       safe: false,
